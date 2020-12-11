@@ -14,43 +14,60 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:padding="16dp"
-        android:clickable="false"
+        android:clickable="true"
         android:src="@drawable/ic_profile" />
 
+
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_marginTop="20dp"
+android:hint="First name"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+    app:endIconMode="clear_text">
+
     <EditText
-        android:layout_marginTop="5dp"
         android:id="@+id/txtFirstName"
+        android:layout_width="342dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_width="match_parent"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:padding="16dp"
-        android:textAlignment="center"
-        android:enabled="false"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-
-        android:inputType="textPersonName"
-        android:hint="First Name" />
-
-    <EditText
         android:layout_marginTop="5dp"
-        android:id="@+id/txtLastName"
-
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_width="match_parent"
-        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
         android:padding="16dp"
         android:textAlignment="center"
-        android:enabled="false"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:inputType="textPersonName"
-        android:hint="Last Name" />
 
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/textField"
+        android:hint="Last Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:layout_width="343dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <ToggleButton
+        android:layout_marginTop="30dp"
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="60dp"

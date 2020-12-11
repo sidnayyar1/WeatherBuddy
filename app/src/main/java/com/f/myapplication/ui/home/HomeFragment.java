@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,9 +37,9 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
     private RecyclerView recyclerView;
+
     public static WeatherAdapter wAdapter;
     public static List<WeatherInfo> wList = new ArrayList<>();
-
     private HomeViewModel homeViewModel;
     Double currentLongitude=0.0,currentLatitude=0.0;
     public View onCreateView(@NonNull LayoutInflater inflater,

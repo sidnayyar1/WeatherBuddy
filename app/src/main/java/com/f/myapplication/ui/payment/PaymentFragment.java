@@ -65,12 +65,10 @@ public class PaymentFragment extends Fragment {
                 }
                     else
                     {
-                        Toast.makeText(getActivity().getApplicationContext(), "Invalid Card No or Expirydate", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity().getApplicationContext(), "Invalid Card Number or Expiry date", Toast.LENGTH_SHORT).show();
 
                     }
                 }
-
-
 
             }
         });
@@ -79,6 +77,7 @@ public class PaymentFragment extends Fragment {
     boolean validateCardExpiryDate(String expiryDate) {
         return expiryDate.matches("(?:0[1-9]|1[0-2])/[0-9]{2}");
     }
+
     //link for code https://www.geeksforgeeks.org/program-credit-card-number-validation/
     // Return true if the card number is valid
     public static boolean isValid(String numbernumber)

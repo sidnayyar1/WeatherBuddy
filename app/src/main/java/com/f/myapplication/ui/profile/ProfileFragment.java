@@ -104,7 +104,7 @@ public class ProfileFragment extends Fragment {
                         if (objModel.getID() <= 0) {
 
                             objModel.setID(db.addProfile(new ProfileModel(objModel.getID(), objModel.getName(), objModel.getLname(), objModel.getImage())));
-                            Toast.makeText(getActivity().getApplicationContext(), "successfully saved", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity().getApplicationContext(), "Successfully Saved", Toast.LENGTH_SHORT).show();
 
                         } else {
                             db.updateProfile(new ProfileModel(objModel.getID(), objModel.getName(), objModel.getLname(), objModel.getImage()));
@@ -113,7 +113,7 @@ public class ProfileFragment extends Fragment {
                     }
                     else
                     {
-                        Toast.makeText(getActivity().getApplicationContext(), "Invalid First Name Or last Name. exam Ravi kumar ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity().getApplicationContext(), "Invalid First Name or Last Name. ", Toast.LENGTH_SHORT).show();
 
                     }
 
@@ -166,4 +166,5 @@ public class ProfileFragment extends Fragment {
         cursor.moveToFirst();
         return cursor.getInt(0);
     }
+
 }

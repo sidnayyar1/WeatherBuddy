@@ -51,7 +51,7 @@ public class PremiumFragment extends Fragment {
                 }
                 else
                 {
-                    Toast.makeText(root.getContext(), "Plz Regster your and Card ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(root.getContext(), "Please registered your Card ", Toast.LENGTH_SHORT).show();
                 }
 
             }
